@@ -1,4 +1,4 @@
-# password_cracking_rule
+# OneRuleToRuleThemAll
 
 This is a supporting repo for various blog post's on https://www.notsosecure.com
 
