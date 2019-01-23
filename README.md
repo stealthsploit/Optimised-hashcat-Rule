@@ -1,18 +1,23 @@
-# password_cracking_rule
+# OneRuleToRuleThemAll
 
-This is a supporting repo for various blog post's on https://www.notsosecure.com
+This is a custom hashcat rule, the original supporting blog post of which I wrote when I worked at https://www.notsosecure.com 
 
-“Our super rule came out on top in all our tests, as well as others we looked at after. We’re sorry to disappoint any Lord of the Rings fans (“One ring to rule them all!”), but despite our rule name, there likely won’t ever be one rule to rule them all as other rule based attacks wouldn’t exist if there was. Password attacks should always be executed factoring in all variables, in particular the available time, hardware resources, dictionary size and algorithm.”
+Several default and non-default hashcat rules were individually tested over a set of 4.3 million unique MD5 hashes from a data breach.
+Hashcat debugging provided statistical analysis of the best performing and most efficient rules in each test.
+The best performing 25% of rules from each tested ruleset were extracted and concatenated into a new custom rule.
 
-# Credit where credit is due
-The rule file is a combination of rules from various sources
+OneRuleToRuleThemAll cracked 68.36% of the 4.3 million hashes; an increase of 2.72% (117,626 hashes) over second place which was the hashcat supplied dive rule.
+
+
+# Credit
+Aside from hashcat supplied rule sets, shout outs to the following rule sets that were used for testing:
 
 1. https://github.com/praetorian-inc/Hob0Rules (d3adhob0.rule, hob064.rule)
 2. http://contest-2010.korelogic.com/rules-hashcat.html (KoreLogicRulesPrependRockYou50000)
 3. https://github.com/NSAKEY/nsa-rules (_NSAKEY.v2.dive.rule)
 
-If we have missed adding someone in credit, feel free to send a note or open a github issue and we will sort it out.
+Please get in touch if anyone has been missed.
 
 # License
-Rules taken from other ruleset will follow respective license.
+Rules taken from other ruleset will follow respective licenses.
 Additional custom rules are added besides those mentioned above, these additional rules are MIT Licensed.
