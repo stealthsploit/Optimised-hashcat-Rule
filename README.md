@@ -1,3 +1,7 @@
+# Edit: This is now sub-optimal and has been improved with [OneRuleToRuleThemStill](https://github.com/stealthsploit/OneRuleToRuleThemStill).
+<br/><br/>
+
+
 # OneRuleToRuleThemAll
 
 This is a custom hashcat rule, the original supporting blog post of which I wrote when I worked at https://www.notsosecure.com 
